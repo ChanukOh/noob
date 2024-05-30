@@ -1,6 +1,3 @@
 def solution(sides):
     sides.sort()
-    if sides[0]+sides[1]<=sides[2]:
-        return 2
-    else:
-        return 1
+    return 2 if sides[0]+sides[1]<=sides[2] else 1
