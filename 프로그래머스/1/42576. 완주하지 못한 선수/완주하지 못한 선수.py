@@ -7,3 +7,4 @@ def solution(participant, completion):
     for p,count in participant_count.items():
         if count>0:
             return p
+    
