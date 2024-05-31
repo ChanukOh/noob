@@ -1,5 +1,4 @@
 def solution(s):
-    a=[]
     for i in s:
         if i.isdigit()==False:
             return False
