@@ -1,7 +1,7 @@
 import random
 def solution(numbers):
     a=[]
-    d=range(1000)
+    d=range(len(numbers)*10)
     for i in range(len(numbers)):
         for c in d:
             e,f=random.sample(numbers,2)
