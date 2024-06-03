@@ -1,13 +1,14 @@
 import random
 def solution(numbers):
     a=[]
-    d=range(len(numbers)*10)
-    for i in range(len(numbers)):
-        for c in d:
-            e,f=random.sample(numbers,2)
-            b=e+f
-            if b in a:
-                pass
-            else:
-                a.append(b)
-    return sorted(a)
+
+    for i in range(len(numbers)*50):
+        e,f,g=random.sample(numbers,3)
+        b=e+f
+        c=f+g
+        d=e+g
+
+        a.append(b)
+        a.append(c)
+        a.append(d)
+    return sorted(list(set(a)))
