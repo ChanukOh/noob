@@ -1,14 +1,8 @@
-import random
+from itertools import combinations
 def solution(numbers):
     a=[]
-
-    for i in range(len(numbers)*50):
-        e,f,g=random.sample(numbers,3)
-        b=e+f
-        c=f+g
-        d=e+g
-
-        a.append(b)
-        a.append(c)
-        a.append(d)
+    combs = combinations(numbers, 2)
+    for comb in combs:
+        a.append(sum(comb))
     return sorted(list(set(a)))
+        
