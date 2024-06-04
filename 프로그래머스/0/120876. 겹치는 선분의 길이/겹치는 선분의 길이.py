@@ -1,10 +1,10 @@
 def solution(lines):
-    b=[]
+    bs=[]
     answer=[]
     for c,d in lines:
         for i in range(c,d):
-            if i in b:
+            if i in bs:
                 answer.append(i)
             else:
-                b.append(i)
+                bs.append(i)
     return len(set(answer))
