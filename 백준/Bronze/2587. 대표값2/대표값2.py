@@ -1,7 +1,6 @@
-import statistics
 a = []
 for i in range(5):
     a.append(int(input()))
 a.sort()
-print(statistics.mean(a))
+print(int(sum(a)/5))
 print(a[len(a)//2])
