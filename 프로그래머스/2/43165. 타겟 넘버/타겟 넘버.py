@@ -3,6 +3,7 @@ for i in range(1,51):
     graph[i]=[i,-i]
 
 def solution(numbers, target):
+    
     def finder(numbers, found=None):
         if found is None:
             found = []
