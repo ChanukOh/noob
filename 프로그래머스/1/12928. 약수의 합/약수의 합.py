@@ -1,6 +1,2 @@
 def solution(n):
-    answer = []
-    for i in range(1,n+1):
-        if n%i==0:
-            answer.append(i)
-    return sum(answer)
+    return n+sum([i if n%i==0 else 0 for i in range(1,(n//2)+1) ])
