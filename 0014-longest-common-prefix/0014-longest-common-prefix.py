@@ -7,6 +7,7 @@ class Solution:
             for j in range(1,len(strs)):
                 if strs[j][i]!=strs[0][i]:
                     globalcheck=1
+                    return ''.join(answer)
             if globalcheck==0:
                 answer.append(x)
         return ''.join(answer)
